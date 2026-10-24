@@ -91,6 +91,39 @@ C['posts/meme-terceiro-set.png']=f"""O terceiro set joga-se no bar 🍺
 Ganhar ou perder, a rodada é sagrada. Marca quem te deve a próxima 👇
 
 {T}"""
+C['posts/dicas/dicas-1.png']=f"""4 dicas para quem está a começar no padel 🎾👉
+
+Desliza, guarda e experimenta no próximo jogo. E envia a quem começou a jogar contigo!
+
+#TomarPadel #Padel #DicasDePadel #Tomar #PadelPortugal"""
+C['posts/coisas/coisas-1.png']=f"""Coisas que só quem joga padel percebe 😂👉
+
+Qual destas é a tua? Conta nos comentários, nós não julgamos.
+
+{T}"""
+C['posts/raquete/raquete-1.png']=f"""Redonda, lágrima ou diamante? Que raquete é para ti? 🎾👉
+
+Desliza e descobre qual combina com o teu jogo. Ainda na dúvida? Experimenta no clube: alugamos raquetes por 1€.
+
+#TomarPadel #Padel #DicasDePadel #Tomar #PadelPortugal"""
+C['posts/clube/clube-1.png']=f"""Conhece a nossa casa 💙👉
+
+Campos cobertos, bar, loja e até ping-pong para a espera. Anda conhecer o TomarPadel!
+
+📍 Rua D. João I, Vale Carrito, Tomar
+
+{T}"""
+C['posts/meme-parceiro.png']=f"""Não existe bola perdida. Existe parceiro mal colocado 😅
+
+Envia ao teu parceiro. Ele sabe o que fez 👇
+
+{T}"""
+C['posts/parceiro-carlsberg.png']=f"""Obrigado, Carlsberg 💚
+
+Connosco em cada jogo e em cada terceiro set. Obrigado por apoiarem o padel em Tomar!
+
+{T}"""
+C['mini-torneios/mini-torneio-14nov-post-escuro.png']=MINI.format(d='14',c='M3+, M3 e M4+')
 P=[
 ("2026-10-25T11:00:00+00:00","Dom 25 Out","11:00","Aprender","posts/regras/regras-1.png","Carrossel: 5 regras que muita gente não sabe","Claro, a seguir à agenda de eventos (escura)."),
 ("2026-10-26T18:30:00+00:00","Seg 26 Out","18:30","Clube","posts/precos-campos.png","Preços dos campos","Escuro. Serve de teste ao Facebook."),
@@ -101,6 +134,16 @@ P=[
 ("2026-11-03T18:30:00+00:00","Ter 3 Nov","18:30","Competição","mini-torneios/mini-torneio-07nov-post.png","Mini-torneio 07 Nov","Claro. Sempre à terça antes do mini-torneio."),
 ("2026-11-04T18:30:00+00:00","Qua 4 Nov","18:30","Humor","posts/meme-terceiro-set.png","O terceiro set joga-se no bar","Escuro."),
 ("2026-11-05T18:30:00+00:00","Qui 5 Nov","18:30","Parceiros","posts/patrocinador.png","Obrigado P&S Auto Color Expert","Claro."),
+("2026-11-08T11:00:00+00:00","Dom 8 Nov","11:00","Comunidade","posts/comunidade.png","Comunidade","Escuro."),
+("2026-11-09T18:30:00+00:00","Seg 9 Nov","18:30","Aprender","posts/dicas/dicas-1.png","Carrossel: 4 dicas para quem está a começar","Claro."),
+("2026-11-10T18:30:00+00:00","Ter 10 Nov","18:30","Competição","mini-torneios/mini-torneio-14nov-post-escuro.png","Mini-torneio 14 Nov","Escuro. Versão escura para manter a alternância."),
+("2026-11-11T18:30:00+00:00","Qua 11 Nov","18:30","Humor","posts/coisas/coisas-1.png","Carrossel: coisas que só quem joga padel percebe","Claro."),
+("2026-11-12T18:30:00+00:00","Qui 12 Nov","18:30","Competição","torneios/natal-ultimos-dias.png","Torneio de Natal: últimos dias","Escuro (vermelho). Inscrições até 14 Nov."),
+("2026-11-15T11:00:00+00:00","Dom 15 Nov","11:00","Comunidade","posts/clube/clube-1.png","Carrossel: conhece a nossa casa","Claro. Com as tuas fotos novas."),
+("2026-11-16T18:30:00+00:00","Seg 16 Nov","18:30","Aprender","posts/raquete/raquete-1.png","Carrossel: que raquete é para ti?","Escuro."),
+("2026-11-17T18:30:00+00:00","Ter 17 Nov","18:30","Competição","mini-torneios/mini-torneio-21nov-post.png","Mini-torneio 21 Nov","Claro."),
+("2026-11-18T18:30:00+00:00","Qua 18 Nov","18:30","Humor","posts/meme-parceiro.png","Não existe bola perdida","Escuro."),
+("2026-11-19T18:30:00+00:00","Qui 19 Nov","18:30","Parceiros","posts/parceiro-carlsberg.png","Obrigado, Carlsberg","Claro."),
 ]
 S=[]
 def st(d,dia,h,img,t): S.append((d,dia,h,img,t))
@@ -119,17 +162,19 @@ cards=[]
 for i,(a,dia,h,pil,img,t,nota) in enumerate(P):
     fn=f"img/{i+1:02d}.jpg"; Image.open('dl/'+img).convert('RGB').resize((720,900),Image.LANCZOS).save(OUT+fn,quality=86)
     car=None
-    if '/regras/' in img or '/parceiros/' in img:
+    CAR={'regras':7,'parceiros':7,'dicas':6,'coisas':6,'raquete':5,'clube':5}
+    key=next((k for k in CAR if f'/{k}/' in img),None)
+    if key:
         base=img.rsplit('-',1)[0]; os.makedirs(OUT+'img/c',exist_ok=True); car=[]
-        for k in range(1,8):
+        for k in range(1,CAR[key]+1):
             cf=f"img/c/{base.split('/')[-1]}-{k}.jpg"; Image.open(f'dl/{base}-{k}.png').convert('RGB').resize((720,900),Image.LANCZOS).save(OUT+cf,quality=84); car.append(cf)
     if car:
-        slides=''.join(f'<img src="{c}" alt="{html.escape(t)} {k+1}/7" loading="lazy" width="720" height="900">' for k,c in enumerate(car))
-        ph=f'<div class="ph car"><div class="track">{slides}</div><button class="nav prev" aria-label="Anterior">‹</button><button class="nav next" aria-label="Seguinte">›</button><div class="cnt">1/7</div></div>'
+        slides=''.join(f'<img src="{c}" alt="{html.escape(t)} {k+1}/{len(car)}" loading="lazy" width="720" height="900">' for k,c in enumerate(car))
+        ph=f'<div class="ph car"><div class="track">{slides}</div><button class="nav prev" aria-label="Anterior">‹</button><button class="nav next" aria-label="Seguinte">›</button><div class="cnt">1/{len(car)}</div></div>'
     else:
         ph=f'<div class="ph"><img src="{fn}" alt="{html.escape(t)}" loading="lazy" width="720" height="900"></div>'
-    st_='Agendado' if i<5 else 'Agendo a 30 Out'
-    cards.append(f'''<article class="card">{ph}<div class="badge {'ok' if i<5 else 'wait'}">{st_}</div>
+    st_='Agendado' if a<'2026-11-02' else ('Agendo a 30 Out' if a<'2026-11-06' else 'Lote 2 · por aprovar')
+    cards.append(f'''<article class="card">{ph}<div class="badge {'ok' if a<'2026-11-02' else 'wait'}">{st_}</div>
 <div class="meta"><div class="when"><span class="d">{dia}</span><span class="h">{h}</span></div><span class="pill p-{pil.lower().replace('ç','c').replace('ã','a')}">{pil}</span></div>
 <h3>{html.escape(t)}</h3>{f'<p class="nota">{html.escape(nota)}</p>' if nota else ''}
 <details><summary>Legenda</summary><pre>{html.escape(C[img])}</pre></details></article>''')
@@ -140,8 +185,8 @@ for a,dia,h,img,t in S:
     fn='img/st/'+img.split('/')[-1].replace('.png','.jpg')
     if not os.path.exists(OUT+fn): Image.open('dl/'+img).convert('RGB').resize((360,640),Image.LANCZOS).save(OUT+fn,quality=84)
     sk=sum(1 for _ in sc)
-    sb='Agendado' if sk<5 else ('Agendo a 30 Out' if sk<7 else 'Próximo lote')
-    sc.append(f'<div class="sc"><div class="badge {"ok" if sk<5 else "wait"}">{sb}</div><img src="{fn}" alt="{html.escape(t)}" loading="lazy"><div class="sm"><b>{dia}</b> {h}<br>{html.escape(t)}</div></div>')
+    sb='Agendado' if a<'2026-11-02T11' else ('Agendo a 30 Out' if a<'2026-11-08' else 'Lote 2 · por aprovar')
+    sc.append(f'<div class="sc"><div class="badge {"ok" if a<"2026-11-02T11" else "wait"}">{sb}</div><img src="{fn}" alt="{html.escape(t)}" loading="lazy"><div class="sm"><b>{dia}</b> {h}<br>{html.escape(t)}</div></div>')
 page=open('gen/plano_tpl.html').read().replace('%%CARDS%%','\n'.join(cards)).replace('%%STORIES%%','\n'.join(sc))
 open(OUT+'plano.html','w').write(page)
 print('ok')
