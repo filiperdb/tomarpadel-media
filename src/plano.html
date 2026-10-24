@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plano Instagram TomarPadel</title>
+<style>
+:root{--bg:#eef3f7;--card:#ffffff;--ink:#15406e;--mute:#5b7290;--line:rgba(21,64,110,.14);--acc:#12ace3;--lime:#9fbf1f;--bar:#c8102e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1d33;--card:#132a47;--ink:#eaf2fb;--mute:#9db3cc;--line:rgba(255,255,255,.12);--acc:#3fc1ee;--lime:#bfd84a;--bar:#ff5a6e}}
+:root[data-theme="dark"]{--bg:#0c1d33;--card:#132a47;--ink:#eaf2fb;--mute:#9db3cc;--line:rgba(255,255,255,.12);--acc:#3fc1ee;--lime:#bfd84a;--bar:#ff5a6e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.45}
+.wrap{max-width:1160px;margin:0 auto;padding:40px 16px 64px}
+.kick{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:700;font-style:italic}
+h1{font-size:clamp(32px,6vw,54px);line-height:1;margin:8px 0 12px;letter-spacing:-.02em}
+.lead{color:var(--mute);max-width:680px;margin:0 0 28px}
+.strat{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-bottom:36px}
+.s{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.s b{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+.s p{margin:0;font-size:15px}
+h2{font-size:22px;margin:0 0 4px}
+.sub{color:var(--mute);font-size:14px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.ph{position:relative}.car .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.car .track::-webkit-scrollbar{display:none}.car .track img{flex:0 0 100%;scroll-snap-align:start}.nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#15406e;font-size:24px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}.prev{left:8px}.next{right:8px}.cnt{position:absolute;right:10px;top:10px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:2px 9px}
+.ph img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.meta{display:flex;justify-content:space-between;align-items:center;padding:12px 14px 0}
+.when .d{font-weight:800}.when .h{margin-left:8px;color:var(--mute);font-variant-numeric:tabular-nums}
+.pill{font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px;border:1.5px solid currentColor}
+.p-clube{color:var(--acc)}.p-bar{color:var(--bar)}.p-competicao{color:var(--ink)}.p-comunidade{color:var(--lime)}.p-promocao{color:var(--acc)}.p-patrocinio{color:var(--mute)}.p-aprender{color:var(--acc)}.p-humor{color:var(--lime)}.p-parceiros{color:var(--mute)}
+.week{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.wd{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}.wd span{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}.wd b{display:block;font-size:17px;margin:4px 0;color:var(--acc)}.wd p{margin:0;font-size:14px}
+.srcs{font-size:13px;color:var(--mute);margin-top:28px}.srcs a{color:var(--acc)}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}.sc{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}.sc img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}.sm{font-size:12.5px;padding:8px 10px;line-height:1.35}
+.card h3{font-size:16px;margin:8px 14px 0}
+.nota{font-size:13px;color:var(--mute);margin:4px 14px 0}
+details{margin:10px 14px 14px;border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--acc)}
+pre{white-space:pre-wrap;font-family:inherit;font-size:14px;margin:10px 0 0}
+.igrid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;max-width:520px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}.tile{position:relative}.tile img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}.tile span{position:absolute;left:6px;top:6px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:2px 8px}
+.next{margin-top:36px}
+.next ul{margin:8px 0 0;padding-left:20px}.next li{margin:4px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kick">TomarPadel 2.0 · Instagram</div>
+<h1>Plano de publicações</h1>
+<p class="lead">Uma estratégia com menos "anúncio" e mais pessoas, humor e coisas úteis: o que as pessoas guardam e enviam aos amigos. Abaixo estão a semana-tipo, a 1ª fase (10 posts, 25 Out a 5 Nov) e as stories de novembro.</p>
+
+<h2>O que aprendemos com outros clubes</h2>
+<p class="sub">Pesquisa sobre clubes de padel e sobre o algoritmo do Instagram em 2026.</p>
+<div class="strat">
+<div class="s"><b>Pessoas primeiro</b><p>Os clubes que crescem dedicam cerca de 70% do conteúdo à comunidade (jogadores, treinadores, eventos) e só cerca de 10% a promoções diretas.</p></div>
+<div class="s"><b>Partilhas e guardados</b><p>Em 2026, envios e guardados pesam mais do que gostos. Dicas, regras e humor são o que as pessoas mandam ao parceiro de jogo.</p></div>
+<div class="s"><b>Carrosséis e reels</b><p>Carrosséis para dicas e listas, reels para pontos e bastidores, stories para o dia a dia e promoções.</p></div>
+<div class="s"><b>Séries fixas</b><p>Rubricas que se repetem todas as semanas criam hábito e consistência, e o feed fica reconhecível.</p></div>
+</div>
+
+<h2>A semana-tipo</h2>
+<p class="sub">5 posts por semana, de domingo a quinta. Dias de semana às 18:30, domingo às 11:00.</p>
+<div class="week">
+<div class="wd"><span>Dom</span><b>Comunidade</b><p>Fotos do fim de semana, vencedores do mini-torneio, jogadores e duplas do clube.</p></div>
+<div class="wd"><span>Seg</span><b>Aprender</b><p>Dicas para atletas, regras, aulas.</p></div>
+<div class="wd"><span>Ter</span><b>Competição</b><p>Mini-torneio do sábado (sempre que houver) ou torneios e resultados.</p></div>
+<div class="wd"><span>Qua</span><b>Humor</b><p>Piadas de padel, duplas e cerveja. Feito para identificar amigos.</p></div>
+<div class="wd"><span>Qui</span><b>Clube e parceiros</b><p>Agradecimentos aos patrocinadores, bar (1 a cada 15 dias), preços e serviços.</p></div>
+</div>
+<div class="strat" style="margin-top:12px">
+<div class="s"><b>Grelha</b><p>Claro e escuro sempre alternados: com 3 colunas, isto cria um padrão em xadrez.</p></div>
+<div class="s"><b>Promoções</b><p>Em story no próprio dia (segunda e quarta). Em post só uma vez por mês, com o calendário.</p></div>
+<div class="s"><b>Stories</b><p>Promoções, mini-torneio no dia, lembretes de torneios. Sondagens e perguntas feitas à mão na app.</p></div>
+<div class="s"><b>Reels</b><p>Objetivo: 1 por semana, com vídeos reais do clube (pontos, aulas, bastidores). Envia-me os vídeos e eu agendo.</p></div>
+</div>
+
+<h2>1ª fase · 25 Out a 5 Nov</h2>
+<p class="sub">Horas de Lisboa.</p>
+<div class="grid">
+<article class="card"><div class="ph"><img src="img/01.jpg" alt="Comunidade" loading="lazy" width="720" height="900"></div>
+<div class="meta"><div class="when"><span class="d">Dom 25 Out</span><span class="h">11:00</span></div><span class="pill p-comunidade">Comunidade</span></div>
+<h3>Comunidade</h3><p class="nota">Escuro. Primeiro post: serve de teste ao Facebook.</p>
+<details><summary>Legenda</summary><pre>A comunidade onde todos contam 💙
+
+Mais do que um clube, o TomarPadel é o sítio onde se fazem duplas, amizades e grandes jogos. Obrigado a todos os que fazem parte!
+
+📍 Rua D. João I, Vale Carrito, Tomar
+
+#TomarPadel #Padel #Tomar #PadelPortugal</pre></details></article>
+<article class="card"><div class="ph car"><div class="track"><img src="img/c/regras-1.jpg" alt="Carrossel: 5 regras que muita gente não sabe 1/7" loading="lazy" width="720" height="900"><img src="img/c/regras-2.jpg" alt="Carrossel: 5 regras que muita gente não sabe 2/7" loading="lazy" width="720" height="900"><img src="img/c/regras-3.jpg" alt="Carrossel: 5 regras que muita gente não sabe 3/7" loading="lazy" width="720" height="900"><img src="img/c/regras-4.jpg" alt="Carrossel: 5 regras que muita gente não sabe 4/7" loading="lazy" width="720" height="900"><img src="img/c/regras-5.jpg" alt="Carrossel: 5 regras que muita gente não sabe 5/7" loading="lazy" width="720" height="900"><img src="img/c/regras-6.jpg" alt="Carrossel: 5 regras que muita gente não sabe 6/7" loading="lazy" width="720" height="900"><img src="img/c/regras-7.jpg" alt="Carrossel: 5 regras que muita gente não sabe 7/7" loading="lazy" width="720" height="900"></div><button class="nav prev" aria-label="Anterior">‹</button><button class="nav next" aria-label="Seguinte">›</button><div class="cnt">1/7</div></div>
+<div class="meta"><div class="when"><span class="d">Seg 26 Out</span><span class="h">18:30</span></div><span class="pill p-aprender">Aprender</span></div>
+<h3>Carrossel: 5 regras que muita gente não sabe</h3><p class="nota">Claro. Conteúdo que se guarda e se envia.</p>
+<details><summary>Legenda</summary><pre>5 regras do padel que muita gente não sabe 🎾👉
+
+Desliza e confirma quantas já conhecias. Sê honesto 😅
+
+Guarda este post e envia ao teu parceiro de jogo que ainda serve por cima.
+
+#TomarPadel #Padel #RegrasDoPadel #Tomar #PadelPortugal</pre></details></article>
+<article class="card"><div class="ph"><img src="img/03.jpg" alt="Preços dos campos" loading="lazy" width="720" height="900"></div>
+<div class="meta"><div class="when"><span class="d">Ter 27 Out</span><span class="h">18:30</span></div><span class="pill p-clube">Clube</span></div>
+<h3>Preços dos campos</h3><p class="nota">Escuro. Sem mini-torneio nesta semana.</p>
+<details><summary>Legenda</summary><pre>Os nossos preços de aluguer de campos (90 min) 🎾
+
+💙 Low cost (2ª a 6ª, das 09h00 às 18h00): 26€ por campo, 6,5€ por pessoa
+⭐ Premium (2ª a 6ª das 18h00 às 24h00; sáb, dom e feriados todo o dia): 30€ por campo, 7,5€ por pessoa
+👦 Jovem (até aos 15 anos, em low cost): 10€ por campo, 2,5€ por pessoa
+
+🎟️ Gamecard de 10 jogos: 65€
+
+Reserva já o teu campo!
+
+#TomarPadel #Padel #Tomar #PadelPortugal</pre></details></article>
+<article class="card"><div class="ph car"><div class="track"><img src="img/c/parceiros-1.jpg" alt="Carrossel: 5 tipos de parceiro de padel 1/7" loading="lazy" width="720" height="900"><img src="img/c/parceiros-2.jpg" alt="Carrossel: 5 tipos de parceiro de padel 2/7" loading="lazy" width="720" height="900"><img src="img/c/parceiros-3.jpg" alt="Carrossel: 5 tipos de parceiro de padel 3/7" loading="lazy" width="720" height="900"><img src="img/c/parceiros-4.jpg" alt="Carrossel: 5 tipos de parceiro de padel 4/7" loading="lazy" width="720" height="900"><img src="img/c/parceiros-5.jpg" alt="Carrossel: 5 tipos de parceiro de padel 5/7" loading="lazy" width="720" height="900"><img src="img/c/parceiros-6.jpg" alt="Carrossel: 5 tipos de parceiro de padel 6/7" loading="lazy" width="720" height="900"><img src="img/c/parceiros-7.jpg" alt="Carrossel: 5 tipos de parceiro de padel 7/7" loading="lazy" width="720" height="900"></div><button class="nav prev" aria-label="Anterior">‹</button><button class="nav next" aria-label="Seguinte">›</button><div class="cnt">1/7</div></div>
+<div class="meta"><div class="when"><span class="d">Qua 28 Out</span><span class="h">18:30</span></div><span class="pill p-humor">Humor</span></div>
+<h3>Carrossel: 5 tipos de parceiro de padel</h3><p class="nota">Claro. Feito para identificar amigos nos comentários.</p>
+<details><summary>Legenda</summary><pre>Os 5 tipos de parceiro de padel 😂👉
+
+Desliza e diz-nos: qual destes és tu? E qual é o teu parceiro?
+
+Identifica-o nos comentários, ele vai perceber 😉
+
+#TomarPadel #Padel #Tomar #PadelPortugal</pre></details></article>
+<article class="card"><div class="ph"><img src="img/05.jpg" alt="Snacks (novo no menu)" loading="lazy" width="720" height="900"></div>
+<div class="meta"><div class="when"><span class="d">Qui 29 Out</span><span class="h">18:30</span></div><span class="pill p-bar">Bar</span></div>
+<h3>Snacks (novo no menu)</h3><p class="nota">Escuro. Único post de bar desta quinzena.</p>
+<details><summary>Legenda</summary><pre>Novidade no bar: Snacks 🆕
+
+🥖 Pão com chouriço: 3€
+🥚 Ovo cozido: 1€
+
+Perfeito para um reforço rápido antes ou depois do jogo.
+
+#TomarPadel #Padel #Tomar #BarTomarPadel</pre></details></article>
+<article class="card"><div class="ph"><img src="img/06.jpg" alt="Promoções e temáticas de novembro" loading="lazy" width="720" height="900"></div>
+<div class="meta"><div class="when"><span class="d">Dom 1 Nov</span><span class="h">11:00</span></div><span class="pill p-promocao">Promoção</span></div>
+<h3>Promoções e temáticas de novembro</h3><p class="nota">Claro. O post mensal das promoções.</p>
+<details><summary>Legenda</summary><pre>Todas as semanas há uma razão para vir ao TomarPadel 💙
+
+🎾 Segundas: reserva das 22:30 às 00:00 e habilita-te a ganhar um voucher de 1h30 para os 4 jogadores
+🎡 Quartas: Desafio do mês, a Roleta da Sorte!
+🍺 Sextas: Happy Hour, imperial a 1€ das 15:00 às 02:00
+
+E não te esqueças: mini torneios a 7, 14 e 21 e o convívio de final de época a 29.
+
+Guarda este post para não perderes nada 📌
+
+#TomarPadel #Padel #Tomar #HappyHour #PadelPortugal</pre></details></article>
+<article class="card"><div class="ph"><img src="img/07.jpg" alt="Aluguer de material" loading="lazy" width="720" height="900"></div>
+<div class="meta"><div class="when"><span class="d">Seg 2 Nov</span><span class="h">18:30</span></div><span class="pill p-clube">Clube</span></div>
+<h3>Aluguer de material</h3><p class="nota">Escuro.</p>
+<details><summary>Legenda</summary><pre>Esqueceste a raquete? Nós tratamos disso 😉
+
+🎾 Raquete: 1€
+🟡 Lata com 3 bolas: 1€
+
+Pede no balcão antes do teu jogo.
+
+#TomarPadel #Padel #Tomar #PadelPortugal</pre></details></article>
+<article class="card"><div class="ph"><img src="img/08.jpg" alt="Mini-torneio 07 Nov" loading="lazy" width="720" height="900"></div>
+<div class="meta"><div class="when"><span class="d">Ter 3 Nov</span><span class="h">18:30</span></div><span class="pill p-competicao">Competição</span></div>
+<h3>Mini-torneio 07 Nov</h3><p class="nota">Claro. Sempre à terça antes do mini-torneio.</p>
+<details><summary>Legenda</summary><pre>Mini Torneio Mix no TomarPadel 🎾
+
+📅 Sábado, 7 de novembro · 21:30 às 00:00
+🎯 Categorias: M4, M5+ e M5
+👥 8 participantes · 10€ por pessoa
+🍺 Oferta de uma bebida (imperial ou água 1,5L)
+
+🏆 Prémios:
+1º lugar: voucher de 1h30 + prémios dos patrocinadores
+2º lugar: cartão Carlsberg
+3º lugar: grip
+
+Vagas limitadas, inscreve-te já!
+
+#TomarPadel #Padel #MiniTorneio #Tomar #PadelPortugal</pre></details></article>
+<article class="card"><div class="ph"><img src="img/09.jpg" alt="O terceiro set joga-se no bar" loading="lazy" width="720" height="900"></div>
+<div class="meta"><div class="when"><span class="d">Qua 4 Nov</span><span class="h">18:30</span></div><span class="pill p-humor">Humor</span></div>
+<h3>O terceiro set joga-se no bar</h3><p class="nota">Escuro.</p>
+<details><summary>Legenda</summary><pre>O terceiro set joga-se no bar 🍺
+
+Ganhar ou perder, a rodada é sagrada. Marca quem te deve a próxima 👇
+
+#TomarPadel #Padel #Tomar #PadelPortugal</pre></details></article>
+<article class="card"><div class="ph"><img src="img/10.jpg" alt="Obrigado P&amp;S Auto Color Expert" loading="lazy" width="720" height="900"></div>
+<div class="meta"><div class="when"><span class="d">Qui 5 Nov</span><span class="h">18:30</span></div><span class="pill p-parceiros">Parceiros</span></div>
+<h3>Obrigado P&amp;S Auto Color Expert</h3><p class="nota">Claro. Primeiro da série de agradecimentos aos parceiros.</p>
+<details><summary>Legenda</summary><pre>Obrigado a quem nos apoia 💙
+
+A P&amp;S Auto Color Expert é o patrocinador oficial do Torneio de Natal do TomarPadel. Pintura auto e bate-chapas com o rigor que o teu carro merece.
+
+Obrigado pela confiança e por apostarem no padel em Tomar! 🎾
+
+#TomarPadel #Padel #Tomar #PadelPortugal</pre></details></article>
+</div>
+
+<h2 style="margin-top:36px">Como fica a grelha a 5 de novembro</h2><p class="sub">O Torneio de Natal continua fixado no topo. A seguir, claro e escuro alternados.</p><div class="igrid"><div class="tile"><img src="img/ex_natal.jpg" alt="" loading="lazy"><span>Fixado</span></div><div class="tile"><img src="img/10.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/09.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/08.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/07.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/06.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/05.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/04.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/03.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/02.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/01.jpg" alt="" loading="lazy"></div><div class="tile"><img src="img/ex_eventos.jpg" alt="" loading="lazy"><span>Publicado</span></div><div class="tile"><img src="img/ex_templarios.jpg" alt="" loading="lazy"><span>Publicado</span></div></div>
+<h2 style="margin-top:36px">Stories · 26 Out a 30 Nov</h2><p class="sub">As stories não contam para o limite de 10 do Buffer, por isso agendo o mês inteiro.</p><div class="sgrid">
+<div class="sc"><img src="img/st/promo-segundas-story.jpg" alt="Segundas à noite" loading="lazy"><div class="sm"><b>Seg 26 Out</b> 10:00<br>Segundas à noite</div></div>
+<div class="sc"><img src="img/st/promo-roleta-story.jpg" alt="Roleta da Sorte" loading="lazy"><div class="sm"><b>Qua 28 Out</b> 10:00<br>Roleta da Sorte</div></div>
+<div class="sc"><img src="img/st/eventos-novembro-story.jpg" alt="Agenda de eventos de novembro" loading="lazy"><div class="sm"><b>Dom 1 Nov</b> 10:00<br>Agenda de eventos de novembro</div></div>
+<div class="sc"><img src="img/st/natal-story.jpg" alt="Torneio de Natal: inscrições abertas" loading="lazy"><div class="sm"><b>Dom 1 Nov</b> 12:00<br>Torneio de Natal: inscrições abertas</div></div>
+<div class="sc"><img src="img/st/promo-segundas-story.jpg" alt="Segundas à noite" loading="lazy"><div class="sm"><b>Seg 2 Nov</b> 10:00<br>Segundas à noite</div></div>
+<div class="sc"><img src="img/st/promo-roleta-story.jpg" alt="Roleta da Sorte" loading="lazy"><div class="sm"><b>Qua 4 Nov</b> 10:00<br>Roleta da Sorte</div></div>
+<div class="sc"><img src="img/st/mini-torneio-07nov-story.jpg" alt="Mini-torneio 07 Nov: é hoje" loading="lazy"><div class="sm"><b>Sáb 7 Nov</b> 11:00<br>Mini-torneio 07 Nov: é hoje</div></div>
+<div class="sc"><img src="img/st/promo-segundas-story.jpg" alt="Segundas à noite" loading="lazy"><div class="sm"><b>Seg 9 Nov</b> 10:00<br>Segundas à noite</div></div>
+<div class="sc"><img src="img/st/promo-roleta-story.jpg" alt="Roleta da Sorte" loading="lazy"><div class="sm"><b>Qua 11 Nov</b> 10:00<br>Roleta da Sorte</div></div>
+<div class="sc"><img src="img/st/natal-story.jpg" alt="Torneio de Natal: inscrições fecham amanhã" loading="lazy"><div class="sm"><b>Sex 13 Nov</b> 19:00<br>Torneio de Natal: inscrições fecham amanhã</div></div>
+<div class="sc"><img src="img/st/mini-torneio-14nov-story.jpg" alt="Mini-torneio 14 Nov: é hoje" loading="lazy"><div class="sm"><b>Sáb 14 Nov</b> 11:00<br>Mini-torneio 14 Nov: é hoje</div></div>
+<div class="sc"><img src="img/st/promo-segundas-story.jpg" alt="Segundas à noite" loading="lazy"><div class="sm"><b>Seg 16 Nov</b> 10:00<br>Segundas à noite</div></div>
+<div class="sc"><img src="img/st/promo-roleta-story.jpg" alt="Roleta da Sorte" loading="lazy"><div class="sm"><b>Qua 18 Nov</b> 10:00<br>Roleta da Sorte</div></div>
+<div class="sc"><img src="img/st/mini-torneio-21nov-story.jpg" alt="Mini-torneio 21 Nov: é hoje" loading="lazy"><div class="sm"><b>Sáb 21 Nov</b> 11:00<br>Mini-torneio 21 Nov: é hoje</div></div>
+<div class="sc"><img src="img/st/promo-segundas-story.jpg" alt="Segundas à noite" loading="lazy"><div class="sm"><b>Seg 23 Nov</b> 10:00<br>Segundas à noite</div></div>
+<div class="sc"><img src="img/st/promo-roleta-story.jpg" alt="Roleta da Sorte" loading="lazy"><div class="sm"><b>Qua 25 Nov</b> 10:00<br>Roleta da Sorte</div></div>
+<div class="sc"><img src="img/st/promo-segundas-story.jpg" alt="Segundas à noite" loading="lazy"><div class="sm"><b>Seg 30 Nov</b> 10:00<br>Segundas à noite</div></div>
+</div>
+<div class="next s">
+<b>2ª fase · a partir de 8 Nov (agendo quando a fila esvaziar)</b>
+<ul>
+<li><strong>Seg:</strong> Dica para atletas (carrossel) e post das aulas</li>
+<li><strong>Ter:</strong> Mini-torneios de 14 e 21 Nov (10 e 17 Nov)</li>
+<li><strong>Qua:</strong> Mais humor: memes de duplas e cerveja</li>
+<li><strong>Qui:</strong> Torneio de Natal: últimos dias (12 Nov); obrigado à Carlsberg, Quinta da Cacabrava e Campo Jovem; bar Kids</li>
+<li><strong>Dom:</strong> Vencedores dos mini-torneios com fotos do próprio sábado</li>
+<li>Horários, Gamecard e Especial Torneio (bar, início de dezembro)</li>
+</ul>
+</div>
+<p class="srcs">Fontes: <a href="https://www.authic.io/blog/the-70-20-10-rule-for-padel-club-social-media">Authic, regra 70-20-10</a> · <a href="https://www.playgeko.com/en/blog/how-to-build-a-padel-club-marketing-strategy-that-actually-works">Playgeko</a> · <a href="https://later.com/blog/how-instagram-algorithm-works/">Later, algoritmo 2026</a> · <a href="https://www.ltapadel.org.uk/news/2026/september/the-rise-of-padel-content-creators/">LTA Padel</a></p>
+</div>
+<script>
+document.querySelectorAll('.car').forEach(function(c){var t=c.querySelector('.track'),n=c.querySelector('.cnt'),k=t.children.length;
+function go(d){t.scrollBy({left:d*t.clientWidth,behavior:'smooth'})}
+c.querySelector('.prev').addEventListener('click',function(){go(-1)});c.querySelector('.next').addEventListener('click',function(){go(1)});
+t.addEventListener('scroll',function(){n.textContent=(Math.round(t.scrollLeft/t.clientWidth)+1)+'/'+k})});
+</script>
+</body>
+</html>
