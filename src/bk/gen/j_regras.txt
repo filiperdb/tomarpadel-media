@@ -1,0 +1,7 @@
+PostRegras1.dc.html posts/regras/regras-1.png 1080 1350
+PostRegras2.dc.html posts/regras/regras-2.png 1080 1350
+PostRegras3.dc.html posts/regras/regras-3.png 1080 1350
+PostRegras4.dc.html posts/regras/regras-4.png 1080 1350
+PostRegras5.dc.html posts/regras/regras-5.png 1080 1350
+PostRegras6.dc.html posts/regras/regras-6.png 1080 1350
+PostRegras7.dc.html posts/regras/regras-7.png 1080 1350

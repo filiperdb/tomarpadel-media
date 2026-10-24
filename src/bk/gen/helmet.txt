@@ -1,0 +1,11 @@
+<helmet>
+<style>
+@font-face{font-family:'Archivo';src:url('/_blob/09bd88144048cc425b969416799b2941') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal}
+@font-face{font-family:'Archivo';src:url('/_blob/b8805ee1a6f8fc83e4fa4f30ff8025f3') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic}
+@font-face{font-family:'Instrument Serif';src:url('/_blob/9f58580dda6ce2cce5305e9263b64a9e') format('woff2');font-weight:400;font-style:italic}
+body{margin:0}
+.ar{font-family:'Archivo',sans-serif}
+.sr{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+.foto{filter:grayscale(1) contrast(1.12)}
+</style>
+</helmet>

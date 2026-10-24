@@ -1,0 +1,2 @@
+NatalStory.dc.html torneios/natal-story.png 1080 1920
+NatalPost.dc.html torneios/natal-post.png 1080 1350

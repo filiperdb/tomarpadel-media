@@ -1,0 +1,6 @@
+PromoSegundasStory.dc.html stories/promo-segundas-story.png 1080 1920
+PromoRoletaStory.dc.html stories/promo-roleta-story.png 1080 1920
+PromoHappyHourStory.dc.html stories/promo-happy-hour-story.png 1080 1920
+PostPatrocinador.dc.html posts/patrocinador.png 1080 1350
+PostGamecard.dc.html posts/gamecard.png 1080 1350
+NatalUltimos.dc.html torneios/natal-ultimos-dias.png 1080 1350

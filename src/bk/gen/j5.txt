@@ -1,0 +1,7 @@
+MiniStory.dc.html mini-torneios/mini-torneio-07nov-story.png 1080 1920
+MiniStory14.dc.html mini-torneios/mini-torneio-14nov-story.png 1080 1920
+MiniStory21.dc.html mini-torneios/mini-torneio-21nov-story.png 1080 1920
+NatalStory.dc.html torneios/natal-story.png 1080 1920
+CalEventosStory.dc.html calendarios/eventos-novembro-story.png 1080 1920
+PromoSegundasStory.dc.html stories/promo-segundas-story.png 1080 1920
+PromoRoletaStory.dc.html stories/promo-roleta-story.png 1080 1920

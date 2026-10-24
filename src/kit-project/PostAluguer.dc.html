@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<title>Post aluguer de material</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Archivo';src:url('/_blob/09bd88144048cc425b969416799b2941') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal}
+@font-face{font-family:'Archivo';src:url('/_blob/b8805ee1a6f8fc83e4fa4f30ff8025f3') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic}
+@font-face{font-family:'Instrument Serif';src:url('/_blob/9f58580dda6ce2cce5305e9263b64a9e') format('woff2');font-weight:400;font-style:italic}
+body{margin:0}
+.ar{font-family:'Archivo',sans-serif}
+.sr{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+.foto{filter:grayscale(1) contrast(1.12)}
+</style>
+</helmet>
+<div class="ar" style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#15406e;color:#ffffff">
+
+  <!-- Foto -->
+  <img src="/_blob/efaae9d369012fed06a5bc55ea3b1d89" alt="Duas raquetes e três bolas encostadas à rede" style="position:absolute;left:0;top:0;width:1080px;height:1010px;object-fit:cover;object-position:50% 52%">
+
+  <div data-fade="1" style="position:absolute;left:0;top:790px;width:1080px;height:220px;background:linear-gradient(180deg,#15406e00 0%,#15406e 100%)"></div>
+
+  <!-- Cabeçalho -->
+  <div style="position:absolute;left:64px;top:56px;display:flex;align-items:center;gap:16px">
+    <img src="/_blob/dc6f42a16820c4982ce97f828280ea49" alt="TomarPadel 2.0" style="height:72px;width:auto">
+    <div style="background:#15406e;border-radius:999px;padding:10px 22px;font-style:italic;font-weight:600;font-size:22px;letter-spacing:0.12em;text-transform:uppercase">Aluguer de material</div>
+  </div>
+
+  <!-- Faixa -->
+  <div style="position:absolute;left:0;top:1010px;width:1080px;height:340px;box-sizing:border-box;padding:40px 64px;display:flex;flex-direction:column;gap:22px">
+    <div style="display:flex;align-items:baseline;gap:18px">
+      <div class="sr" style="font-size:84px;line-height:0.9;color:#bfd84a">Esqueceste</div>
+      <div style="font-weight:900;font-stretch:104%;font-size:76px;line-height:0.9;letter-spacing:-0.02em">a raquete?</div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px">
+      <div style="background:#ffffff;color:#15406e;border-radius:999px;padding:12px 28px;font-weight:800;font-size:28px">Raquete · 1€</div>
+      <div style="background:#ffffff;color:#15406e;border-radius:999px;padding:12px 28px;font-weight:800;font-size:28px">Lata com 3 bolas · 1€</div>
+    </div>
+    <div style="font-size:22px;color:#c9d7e6">Pede no balcão antes do teu jogo.</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+PromoSegundasStory.dc.html stories/promo-segundas-story.png 1080 1920
+PromoRoletaStory.dc.html stories/promo-roleta-story.png 1080 1920

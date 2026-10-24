@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<title>Flyer torneio impacto</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Archivo';src:url('/_blob/09bd88144048cc425b969416799b2941') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal}
+@font-face{font-family:'Archivo';src:url('/_blob/b8805ee1a6f8fc83e4fa4f30ff8025f3') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic}
+@font-face{font-family:'Instrument Serif';src:url('/_blob/9f58580dda6ce2cce5305e9263b64a9e') format('woff2');font-weight:400;font-style:italic}
+body{margin:0}
+.ar{font-family:'Archivo',sans-serif}
+.sr{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+.foto{filter:grayscale(1) contrast(1.12)}
+</style>
+</helmet>
+<div class="ar" style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#0b2a4c;color:#ffffff">
+
+  <!-- Foto P&B com rasto de movimento -->
+  <img class="foto" src="/_blob/657017d6167018b361d818f0c69bc1f4" alt="Raquetes encostadas à rede" style="position:absolute;left:0;top:0;width:1080px;height:1110px;object-fit:cover">
+  <div style="position:absolute;left:0;top:0;width:1080px;height:1110px;background:repeating-linear-gradient(0deg,rgba(11,42,76,0.18) 0 3px,transparent 3px 7px)"></div>
+  <div style="position:absolute;left:0;top:0;width:1080px;height:1110px;background:rgba(11,42,76,0.45)"></div>
+
+  <!-- Topo -->
+  <div style="position:absolute;left:64px;top:56px;right:64px;display:flex;align-items:center;justify-content:space-between">
+    <img src="/_blob/08b8550035ca2d696fd1c495792ca175" alt="TomarPadel 2.0" style="height:76px;width:auto">
+    <div style="font-style:italic;font-weight:700;font-size:28px;letter-spacing:0.12em;text-transform:uppercase;color:#bfd84a">21 · 22 Novembro 2026</div>
+  </div>
+
+  <!-- Título -->
+  <div style="position:absolute;left:0;right:0;top:200px;text-align:center;font-weight:900;font-stretch:62%;font-size:250px;line-height:0.82;color:#ffffff;text-transform:uppercase;letter-spacing:-0.01em">Torneio<br>de Outono</div>
+  <div class="sr" style="position:absolute;left:0;right:0;top:640px;text-align:center;font-size:72px;line-height:1">em Tomar</div>
+
+  <!-- Informação -->
+  <div style="position:absolute;left:64px;right:64px;top:820px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid rgba(255,255,255,0.5);border-bottom:2px solid rgba(255,255,255,0.5)">
+    <div style="padding:26px 20px 26px 0;display:flex;flex-direction:column;gap:10px"><div style="font-style:italic;font-weight:600;font-size:20px;letter-spacing:0.12em">CATEGORIAS</div><div style="font-weight:800;font-size:32px;line-height:1.15">M3 · M4 · M5<br>F4 · F5</div></div>
+    <div style="padding:26px 20px;border-left:2px solid rgba(255,255,255,0.5);display:flex;flex-direction:column;gap:10px"><div style="font-style:italic;font-weight:600;font-size:20px;letter-spacing:0.12em">INSCRIÇÃO</div><div style="font-weight:800;font-size:32px;line-height:1.15">25€<br>por jogador</div></div>
+    <div style="padding:26px 0 26px 20px;border-left:2px solid rgba(255,255,255,0.5);display:flex;flex-direction:column;gap:10px"><div style="font-style:italic;font-weight:600;font-size:20px;letter-spacing:0.12em">INSCRIÇÕES ATÉ</div><div style="font-weight:800;font-size:32px;line-height:1.15">14 Nov<br>vagas limitadas</div></div>
+  </div>
+
+  <!-- Patrocinadores -->
+  <div style="position:absolute;left:0;right:0;top:1110px;height:240px;box-sizing:border-box;background:#ffffff;color:#0b2a4c;padding:30px 64px;display:flex;flex-direction:column;gap:20px">
+    <div style="font-style:italic;font-weight:600;font-size:20px;letter-spacing:0.12em">PATROCINADORES</div>
+    <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;flex:1">
+      <div style="border:2px dashed #9fb3c8;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#5b7591">LOGO</div>
+      <div style="border:2px dashed #9fb3c8;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#5b7591">LOGO</div>
+      <div style="border:2px dashed #9fb3c8;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#5b7591">LOGO</div>
+      <div style="border:2px dashed #9fb3c8;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#5b7591">LOGO</div>
+      <div style="border:2px dashed #9fb3c8;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#5b7591">LOGO</div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<title>Post como reservar</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Archivo';src:url('/_blob/09bd88144048cc425b969416799b2941') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal}
+@font-face{font-family:'Archivo';src:url('/_blob/b8805ee1a6f8fc83e4fa4f30ff8025f3') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic}
+@font-face{font-family:'Instrument Serif';src:url('/_blob/9f58580dda6ce2cce5305e9263b64a9e') format('woff2');font-weight:400;font-style:italic}
+body{margin:0}
+.ar{font-family:'Archivo',sans-serif}
+.sr{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+.foto{filter:grayscale(1) contrast(1.12)}
+</style>
+</helmet>
+<div class="ar" style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#eef3f7;color:#15406e">
+
+  <!-- Padrão de bolas -->
+  <svg width="1080" height="1350" viewBox="0 0 1080 1350" aria-hidden="true" style="position:absolute;left:0;top:0">
+    <defs>
+      <pattern id="bolas" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse">
+        <circle cx="75" cy="75" r="64" fill="#12ace3"></circle>
+        <path d="M44 18 C 92 44 100 100 82 136" fill="none" stroke="#eef3f7" stroke-width="6" stroke-linecap="round"></path>
+      </pattern>
+    </defs>
+    <polygon points="1080,560 1080,1350 240,1350" fill="url(#bolas)"></polygon>
+  </svg>
+
+  <!-- Cabeçalho -->
+  <div style="position:absolute;left:64px;top:56px;right:64px;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:16px">
+      <img src="/_blob/08b8550035ca2d696fd1c495792ca175" alt="TomarPadel 2.0" style="height:72px;width:auto">
+    </div>
+    <div style="font-style:italic;font-weight:600;font-size:22px;letter-spacing:0.12em;text-transform:uppercase;color:#15406e">Guia rápido</div>
+  </div>
+
+  <!-- Título -->
+  <div style="position:absolute;left:64px;top:240px;width:900px;font-weight:900;font-stretch:104%;font-size:124px;line-height:0.94;letter-spacing:-0.03em;color:#15406e">Como reservo um campo?</div>
+
+  <!-- Chamada -->
+  <div style="position:absolute;left:64px;top:690px;display:flex;flex-direction:column;align-items:flex-start;gap:30px">
+    <div style="font-size:30px;line-height:1.35;max-width:430px">Três passos e estás em campo. Desliza para ver.</div>
+    <div style="display:flex;align-items:center;gap:14px;border:3px solid #15406e;border-radius:999px;padding:14px 30px;color:#15406e;font-weight:700;font-size:28px">
+      Desliza
+      <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="#15406e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

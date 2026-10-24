@@ -1,0 +1,3 @@
+PromoSegundas.dc.html posts/promo-segundas.png 1080 1350
+PromoRoleta.dc.html posts/promo-roleta.png 1080 1350
+PromoHappyHour.dc.html posts/promo-happy-hour.png 1080 1350

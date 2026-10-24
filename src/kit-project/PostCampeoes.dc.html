@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<title>Post campeões</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Archivo';src:url('/_blob/09bd88144048cc425b969416799b2941') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal}
+@font-face{font-family:'Archivo';src:url('/_blob/b8805ee1a6f8fc83e4fa4f30ff8025f3') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic}
+@font-face{font-family:'Instrument Serif';src:url('/_blob/9f58580dda6ce2cce5305e9263b64a9e') format('woff2');font-weight:400;font-style:italic}
+body{margin:0}
+.ar{font-family:'Archivo',sans-serif}
+.sr{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+.foto{filter:grayscale(1) contrast(1.12)}
+</style>
+</helmet>
+<div class="ar" style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#0b2a4c;color:#ffffff">
+
+  <!-- Foto (P&B) -->
+  <img class="foto" src="/_blob/3fb49d2b17a97eef2f29db187a80556b" alt="Foto dos campeões" style="position:absolute;left:0;top:0;width:1080px;height:780px;object-fit:cover;object-position:50% 45%">
+
+  <div data-fade="1" style="position:absolute;left:0;top:520px;width:1080px;height:260px;background:linear-gradient(180deg,#0b2a4c00 0%,#0b2a4c 100%)"></div>
+
+  <!-- Cabeçalho -->
+  <div style="position:absolute;left:64px;top:56px;right:64px;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:16px">
+      <img src="/_blob/08b8550035ca2d696fd1c495792ca175" alt="TomarPadel 2.0" style="height:72px;width:auto">
+    </div>
+    <div style="font-style:italic;font-weight:600;font-size:22px;letter-spacing:0.12em;text-transform:uppercase">Resultados</div>
+  </div>
+
+  <!-- Título -->
+  <div style="position:absolute;left:0;right:0;top:600px;text-align:center;font-weight:900;font-stretch:62%;font-size:244px;line-height:0.8;color:#ffffff;letter-spacing:-0.01em">CAMPEÕES</div>
+
+  <!-- Vencedores -->
+  <div style="position:absolute;left:64px;right:64px;top:860px;display:flex;flex-direction:column;align-items:center;gap:26px;text-align:center">
+    <div style="display:flex;align-items:center;gap:18px">
+      <div style="border:3px solid #bfd84a;border-radius:999px;padding:10px 26px;color:#bfd84a;font-weight:800;font-size:26px;letter-spacing:0.06em">CATEGORIA M4</div>
+      <div style="font-style:italic;font-weight:600;font-size:24px;letter-spacing:0.12em;text-transform:uppercase">Mini Torneio de Outono</div>
+    </div>
+    <div style="font-weight:900;font-stretch:104%;font-size:66px;line-height:1.02;letter-spacing:-0.02em">Nome Apelido<br><span class="sr" style="font-weight:400;font-size:70px">&amp;</span> Nome Apelido</div>
+    <div style="font-size:26px;line-height:1.35;color:#c9d7e6">Finalistas: Nome Apelido e Nome Apelido</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
