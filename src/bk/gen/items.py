@@ -22,7 +22,7 @@ Apenas 8 participantes por mini torneio, por isso garante já o teu lugar!
 #TomarPadel #Padel #MiniTorneio #Tomar #PadelPortugal""",
  "calendarios/tematicas-novembro-post.png":"""Todas as semanas há uma razão para vir ao TomarPadel 💙
 
-🎾 Segundas: reserva das 22:30 às 00:00 e habilita-te a ganhar um voucher de 1h30 para os 4 jogadores
+🎾 Segundas: reserva das 22:30 às 00:00 e habilita-te ao sorteio de um voucher de 1h30 para um dos 4 jogadores
 🎡 Quartas: Desafio do mês, a Roleta da Sorte!
 🍺 Sextas: Happy Hour, imperial a 1€ das 15:00 às 02:00
 
