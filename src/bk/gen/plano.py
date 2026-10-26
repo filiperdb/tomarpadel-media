@@ -147,7 +147,7 @@ P=[
 ]
 S=[]
 def st(d,dia,h,img,t): S.append((d,dia,h,img,t))
-for d,dia in [('2026-10-26','Seg 26 Out'),('2026-11-02','Seg 2 Nov'),('2026-11-09','Seg 9 Nov'),('2026-11-16','Seg 16 Nov'),('2026-11-23','Seg 23 Nov'),('2026-11-30','Seg 30 Nov')]: st(d+'T10:00:00+00:00',dia,'10:00','stories/promo-segundas-story.png','Segundas à noite')
+for d,dia in [('2026-10-26','Seg 26 Out'),('2026-11-02','Seg 2 Nov'),('2026-11-09','Seg 9 Nov'),('2026-11-16','Seg 16 Nov'),('2026-11-23','Seg 23 Nov'),('2026-11-30','Seg 30 Nov')]: st(d+'T10:00:00+00:00',dia,'10:00','stories/promo-segundas-story-v2.png','Segundas à noite')
 for d,dia in [('2026-10-28','Qua 28 Out'),('2026-11-04','Qua 4 Nov'),('2026-11-11','Qua 11 Nov'),('2026-11-18','Qua 18 Nov'),('2026-11-25','Qua 25 Nov')]: st(d+'T10:00:00+00:00',dia,'10:00','stories/promo-roleta-story.png','Roleta da Sorte')
 st('2026-11-01T10:00:00+00:00','Dom 1 Nov','10:00','calendarios/eventos-novembro-story.png','Agenda de eventos de novembro')
 st('2026-11-01T12:00:00+00:00','Dom 1 Nov','12:00','torneios/natal-story.png','Torneio de Natal: inscrições abertas')
