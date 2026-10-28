@@ -118,6 +118,11 @@ C['posts/meme-parceiro.png']=f"""Não existe bola perdida. Existe parceiro mal c
 Envia ao teu parceiro. Ele sabe o que fez 👇
 
 {T}"""
+C['posts/meme-analise.png']=f"""90 minutos de jogo. 2 horas no bar a analisá-lo 🍺🎾
+
+Marca quem faz sempre a melhor análise pós-jogo 👇
+
+{T}"""
 C['posts/parceiro-carlsberg.png']=f"""Obrigado, Carlsberg 💚
 
 Connosco em cada jogo e em cada terceiro set. Obrigado por apoiarem o padel em Tomar!
@@ -128,9 +133,9 @@ P=[
 ("2026-10-25T11:00:00+00:00","Dom 25 Out","11:00","Aprender","posts/regras/regras-1.png","Carrossel: 5 regras que muita gente não sabe","Claro, a seguir à agenda de eventos (escura)."),
 ("2026-10-26T18:30:00+00:00","Seg 26 Out","18:30","Clube","posts/precos-campos.png","Preços dos campos","Escuro. Serve de teste ao Facebook."),
 ("2026-10-27T18:30:00+00:00","Ter 27 Out","18:30","Humor","posts/parceiros/parceiros-1.png","Carrossel: 5 tipos de parceiro de padel","Claro. Sem mini-torneio nesta semana."),
-("2026-10-28T18:30:00+00:00","Qua 28 Out","18:30","Bar","bar/snacks.png","Snacks (novo no menu)","Escuro. Único post de bar desta quinzena."),
+("2026-10-28T18:30:00+00:00","Qua 28 Out","18:30","Clube","posts/aluguer-material.png","Aluguer de material","Escuro. Trocado com o Snacks, que fica para mais tarde."),
 ("2026-11-01T11:00:00+00:00","Dom 1 Nov","11:00","Promoção","calendarios/tematicas-novembro-post.png","Promoções e temáticas de novembro","Claro. Quinta 29 fica sem post para manter claro e escuro alternados."),
-("2026-11-02T18:30:00+00:00","Seg 2 Nov","18:30","Clube","posts/aluguer-material.png","Aluguer de material","Escuro."),
+("2026-11-02T18:30:00+00:00","Seg 2 Nov","18:30","Humor","posts/meme-parceiro.png","Não existe bola perdida","Escuro."),
 ("2026-11-03T18:30:00+00:00","Ter 3 Nov","18:30","Competição","mini-torneios/mini-torneio-07nov-post.png","Mini-torneio 07 Nov","Claro. Sempre à terça antes do mini-torneio."),
 ("2026-11-04T18:30:00+00:00","Qua 4 Nov","18:30","Humor","posts/meme-terceiro-set.png","O terceiro set joga-se no bar","Escuro."),
 ("2026-11-05T18:30:00+00:00","Qui 5 Nov","18:30","Parceiros","posts/patrocinador.png","Obrigado P&S Auto Color Expert","Claro."),
@@ -142,7 +147,7 @@ P=[
 ("2026-11-15T11:00:00+00:00","Dom 15 Nov","11:00","Comunidade","posts/clube/clube-1.png","Carrossel: conhece a nossa casa","Claro. Com as tuas fotos novas."),
 ("2026-11-16T18:30:00+00:00","Seg 16 Nov","18:30","Aprender","posts/raquete/raquete-1.png","Carrossel: que raquete é para ti?","Escuro."),
 ("2026-11-17T18:30:00+00:00","Ter 17 Nov","18:30","Competição","mini-torneios/mini-torneio-21nov-post.png","Mini-torneio 21 Nov","Claro."),
-("2026-11-18T18:30:00+00:00","Qua 18 Nov","18:30","Humor","posts/meme-parceiro.png","Não existe bola perdida","Escuro."),
+("2026-11-18T18:30:00+00:00","Qua 18 Nov","18:30","Humor","posts/meme-analise.png","90 minutos de jogo, 2 horas no bar","Escuro. Novo."),
 ("2026-11-19T18:30:00+00:00","Qui 19 Nov","18:30","Parceiros","posts/parceiro-carlsberg.png","Obrigado, Carlsberg","Claro."),
 ]
 S=[]
@@ -173,8 +178,8 @@ for i,(a,dia,h,pil,img,t,nota) in enumerate(P):
         ph=f'<div class="ph car"><div class="track">{slides}</div><button class="nav prev" aria-label="Anterior">‹</button><button class="nav next" aria-label="Seguinte">›</button><div class="cnt">1/{len(car)}</div></div>'
     else:
         ph=f'<div class="ph"><img src="{fn}" alt="{html.escape(t)}" loading="lazy" width="720" height="900"></div>'
-    st_='Agendado' if a<'2026-11-02' else ('Agendo a 30 Out' if a<'2026-11-06' else 'Lote 2 · por aprovar')
-    cards.append(f'''<article class="card">{ph}<div class="badge {'ok' if a<'2026-11-02' else 'wait'}">{st_}</div>
+    st_='Publicado' if a<'2026-10-28T06' else ('Agendado' if a<'2026-11-05' else ('Agendo a 30 Out' if a<'2026-11-06' else 'Lote 2 · por aprovar'))
+    cards.append(f'''<article class="card">{ph}<div class="badge {'pub' if a<'2026-10-28T06' else ('ok' if a<'2026-11-05' else 'wait')}">{st_}</div>
 <div class="meta"><div class="when"><span class="d">{dia}</span><span class="h">{h}</span></div><span class="pill p-{pil.lower().replace('ç','c').replace('ã','a')}">{pil}</span></div>
 <h3>{html.escape(t)}</h3>{f'<p class="nota">{html.escape(nota)}</p>' if nota else ''}
 <details><summary>Legenda</summary><pre>{html.escape(C[img])}</pre></details></article>''')
@@ -185,8 +190,8 @@ for a,dia,h,img,t in S:
     fn='img/st/'+img.split('/')[-1].replace('.png','.jpg')
     if not os.path.exists(OUT+fn): Image.open('dl/'+img).convert('RGB').resize((360,640),Image.LANCZOS).save(OUT+fn,quality=84)
     sk=sum(1 for _ in sc)
-    sb='Agendado' if a<'2026-11-02T11' else ('Agendo a 30 Out' if a<'2026-11-08' else 'Lote 2 · por aprovar')
-    sc.append(f'<div class="sc"><div class="badge {"ok" if a<"2026-11-02T11" else "wait"}">{sb}</div><img src="{fn}" alt="{html.escape(t)}" loading="lazy"><div class="sm"><b>{dia}</b> {h}<br>{html.escape(t)}</div></div>')
+    sb='Publicado' if a<'2026-10-28T06' else ('Agendado' if a<'2026-11-05' else ('Agendo a 30 Out' if a<'2026-11-08' else 'Lote 2 · por aprovar'))
+    sc.append(f'<div class="sc"><div class="badge {"pub" if a<"2026-10-28T06" else ("ok" if a<"2026-11-05" else "wait")}">{sb}</div><img src="{fn}" alt="{html.escape(t)}" loading="lazy"><div class="sm"><b>{dia}</b> {h}<br>{html.escape(t)}</div></div>')
 page=open('gen/plano_tpl.html').read().replace('%%CARDS%%','\n'.join(cards)).replace('%%STORIES%%','\n'.join(sc))
 open(OUT+'plano.html','w').write(page)
 print('ok')
