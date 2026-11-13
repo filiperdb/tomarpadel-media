@@ -1,4 +1,4 @@
-R=[("Roll up","+ patrocínio TV","Roll up da marca em zona de passagem do clube e presença no ecrã de TV interior, na rotação de conteúdos.","400€","+ IVA",0),
+R=[("Roll up","na entrada","Roll up da marca em zona de passagem do clube, junto à entrada e à loja de equipamento.","400€","+ IVA",0),
 ("Patrocínio","parede L","Lona de grande formato aplicada na parede do clube, visível de dentro dos campos e da zona de convívio.","500€","+ IVA",0),
 ("Publicidade","de campo","Nome da marca no campo e branding nos vidros. O campo passa a ser identificado pela marca nas reservas, na comunicação e nos torneios.","1500€","+ IVA",1),
 ("Entradas","dos campos","Branding nas entradas dos campos: o ponto por onde passa todo o jogador, em todos os jogos.","500€","+ IVA",0),
