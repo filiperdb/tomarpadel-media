@@ -223,8 +223,8 @@ json.dump([dict(dueAt=a,img=e,caption=C[e],title=f) for a,b,c,d,e,f,g in P],open
 from PIL import Image
 OUT='/tmp/claude-0/-home-claude/4597a63e-1f82-5e3b-9ef6-d26353c1c0bf/scratchpad/plano/'
 def STATUS(a):
-    if a<'2026-11-13T13': return 'Publicado','pub'
-    if a<'2026-11-17': return 'Agendado','ok'
+    if a<'2026-11-13T17': return 'Publicado','pub'
+    if a<'2026-11-21T12': return 'Agendado','ok'
     if a<'2026-11-22': return 'Aprovado · a agendar','wait'
     return 'Lote 3 · por aprovar','new'
 cards=[]
