@@ -2,8 +2,8 @@ R=[("Roll up","na entrada","Roll up da marca em zona de passagem do clube, junto
 ("Patrocínio","parede L","Lona de grande formato aplicada na parede do clube, visível de dentro dos campos e da zona de convívio.","500€","+ IVA",0),
 ("Publicidade","de campo","Nome da marca no campo e branding nos vidros. O campo passa a ser identificado pela marca nas reservas, na comunicação e nos torneios.","1500€","+ IVA",1),
 ("Entradas","dos campos","Branding nas entradas dos campos: o ponto por onde passa todo o jogador, em todos os jogos.","500€","+ IVA",0),
-("Patrocínio","de equipas","Naming da equipa e marca no equipamento de jogo, ao longo da Liga de Clubes, dentro e fora de Tomar.","900€","+ IVA",0),
-("Patrocínio","de torneio","Branding no torneio: roll ups, bandeiras e presença na comunicação do evento. Em alternativa, prémios ligados ao negócio da empresa.","750€","+ IVA ou prémios",0)]
+("Patrocínio","de equipas","Naming e marca no equipamento de jogo de todas as equipas do clube, ao longo da Liga de Clubes, dentro e fora de Tomar.","900€","+ IVA",0),
+("Patrocínio","de torneio","Branding no torneio: roll ups, bandeiras e presença na comunicação do evento. Em alternativa, prémios ligados ao negócio da empresa.","750€","por torneio + IVA ou prémios",0)]
 rows=''
 for a,b,d,v,iva,hl in R:
     bg='background:#15406e;color:#fff' if hl else 'background:#fff'
