@@ -110,7 +110,7 @@ C['posts/clube/clube-1.png']=f"""Conhece a nossa casa 💙👉
 
 Campos cobertos, bar, loja e até ping-pong para a espera. Anda conhecer o TomarPadel!
 
-📍 Rua D. João I, Vale Carrito, Tomar
+📍 Rua D. João I, Vale Cabrito, Tomar
 
 {T}"""
 C['posts/meme-parceiro.png']=f"""Não existe bola perdida. Existe parceiro mal colocado 😅

@@ -56,7 +56,7 @@
  {
   "dueAt": "2026-11-08T11:00:00+00:00",
   "img": "posts/comunidade.png",
-  "caption": "A comunidade onde todos contam 💙\n\nMais do que um clube, o TomarPadel é o sítio onde se fazem duplas, amizades e grandes jogos. Obrigado a todos os que fazem parte!\n\n📍 Rua D. João I, Vale Carrito, Tomar\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
+  "caption": "A comunidade onde todos contam 💙\n\nMais do que um clube, o TomarPadel é o sítio onde se fazem duplas, amizades e grandes jogos. Obrigado a todos os que fazem parte!\n\n📍 Rua D. João I, Vale Cabrito, Tomar\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
   "title": "Comunidade"
  },
  {
@@ -86,7 +86,7 @@
  {
   "dueAt": "2026-11-15T11:00:00+00:00",
   "img": "posts/clube/clube-1.png",
-  "caption": "Conhece a nossa casa 💙👉\n\nCampos cobertos, bar, loja e até ping-pong para a espera. Anda conhecer o TomarPadel!\n\n📍 Rua D. João I, Vale Carrito, Tomar\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
+  "caption": "Conhece a nossa casa 💙👉\n\nCampos cobertos, bar, loja e até ping-pong para a espera. Anda conhecer o TomarPadel!\n\n📍 Rua D. João I, Vale Cabrito, Tomar\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
   "title": "Carrossel: conhece a nossa casa"
  },
  {
@@ -112,5 +112,65 @@
   "img": "posts/parceiro-carlsberg.png",
   "caption": "Obrigado, Carlsberg 💚\n\nConnosco em cada jogo e em cada terceiro set. Obrigado por apoiarem o padel em Tomar!\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
   "title": "Obrigado, Carlsberg"
+ },
+ {
+  "dueAt": "2026-11-22T11:00:00+00:00",
+  "img": "posts/comunidade-fotos/comunidade-fotos-1.png",
+  "caption": "Isto é o TomarPadel 💙👉\n\nJogos a qualquer hora, smashes que ficam na memória e duplas que se tornam amizades. E entre jogos, ping-pong 🏓\n\nVem fazer parte: reserva o teu campo na app TiePlayer.\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
+  "title": "Carrossel: isto é o TomarPadel (fotos)"
+ },
+ {
+  "dueAt": "2026-11-23T18:30:00+00:00",
+  "img": "posts/aquecimento/aquecimento-1.png",
+  "caption": "5 minutos de aquecimento que fazem a diferença 🎾👉\n\nDesliza, guarda e faz antes do próximo jogo. O teu ombro agradece!\n\n#TomarPadel #Padel #DicasDePadel #Tomar #PadelPortugal",
+  "title": "Carrossel: 5 minutos de aquecimento"
+ },
+ {
+  "dueAt": "2026-11-24T18:30:00+00:00",
+  "img": "torneios/natal-faltam-10.png",
+  "caption": "Faltam 10 dias para o Torneio de Natal! 🎄🏆\n\n📅 4, 5 e 6 de dezembro\n💬 Grupo de WhatsApp das equipas: 25 de novembro\n🗓️ Calendário de jogos: 30 de novembro\n🏆 Troféu de equipa e prize money para 1º e 2º lugar\n\nPatrocinador oficial: P&S Auto Color Expert\n\n#TomarPadel #Padel #TorneioDeNatal #Tomar #PadelPortugal",
+  "title": "Torneio de Natal: faltam 10 dias"
+ },
+ {
+  "dueAt": "2026-11-25T18:30:00+00:00",
+  "img": "posts/bingo-padel.png",
+  "caption": "Bingo do padel 🎾😂\n\nQuantas fizeste no último jogo? Conta nos comentários e marca o teu parceiro, ele sabe quais foram 👇\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
+  "title": "Bingo do padel"
+ },
+ {
+  "dueAt": "2026-11-26T18:30:00+00:00",
+  "img": "bar/snacks.png",
+  "caption": "Novidade no bar: Snacks 🆕\n\n🥖 Pão com chouriço: 3€\n🥚 Ovo cozido: 1€\n\nPerfeito para um reforço rápido antes ou depois do jogo.\n\n#TomarPadel #Padel #Tomar #BarTomarPadel",
+  "title": "Snacks (novo no menu)"
+ },
+ {
+  "dueAt": "2026-11-29T11:00:00+00:00",
+  "img": "posts/parceiro-campo-jovem.png",
+  "caption": "Obrigado, Campo Jovem 💙\n\nPresentes nos nossos campos e no padel de Tomar. Obrigado pelo apoio!\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
+  "title": "Obrigado, Campo Jovem"
+ },
+ {
+  "dueAt": "2026-11-30T18:30:00+00:00",
+  "img": "posts/rede/rede-1.png",
+  "caption": "3 erros na rede que todos cometemos 🎾👉\n\nDesliza, guarda e envia ao teu parceiro de rede.\n\n#TomarPadel #Padel #DicasDePadel #Tomar #PadelPortugal",
+  "title": "Carrossel: 3 erros na rede"
+ },
+ {
+  "dueAt": "2026-12-01T18:30:00+00:00",
+  "img": "posts/gamecard.png",
+  "caption": "Joga mais, paga menos 🎾\n\nCom o Gamecard tens 10 jogos por 65€.\n\nPede o teu no balcão do clube e garante os próximos jogos.\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
+  "title": "Gamecard"
+ },
+ {
+  "dueAt": "2026-12-02T18:30:00+00:00",
+  "img": "posts/meme-natal.png",
+  "caption": "No Natal, o teu parceiro dá-te uma prenda. Em vez de culpas 🎁😅\n\nPelo menos durante o torneio. Marca o teu parceiro 👇\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
+  "title": "No Natal, o teu parceiro dá-te uma prenda"
+ },
+ {
+  "dueAt": "2026-12-03T18:30:00+00:00",
+  "img": "posts/parceiro-cacabrava.png",
+  "caption": "Obrigado, Quinta da Caçabrava 💙\n\nObrigado pelo apoio ao TomarPadel e ao padel em Tomar!\n\n#TomarPadel #Padel #Tomar #PadelPortugal",
+  "title": "Obrigado, Quinta da Caçabrava"
  }
 ]

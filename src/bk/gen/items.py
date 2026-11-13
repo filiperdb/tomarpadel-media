@@ -82,7 +82,7 @@ Pede no balcão antes do teu jogo.
 
 Mais do que um clube, o TomarPadel é o sítio onde se fazem duplas, amizades e grandes jogos. Obrigado a todos os que fazem parte!
 
-📍 Rua D. João I, Vale Carrito, Tomar
+📍 Rua D. João I, Vale Cabrito, Tomar
 
 {T}"""}),
 ("modelos","Modelos","Têm texto de exemplo: altera no design antes de publicar.",[
