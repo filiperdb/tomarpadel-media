@@ -1,7 +1,7 @@
 O='/tmp/claude-0/-home-claude/4597a63e-1f82-5e3b-9ef6-d26353c1c0bf/scratchpad/plano/'
-tiles=['img/ex_natal.jpg']+[f'img/{i:02d}.jpg' for i in range(10,0,-1)]+['img/ex_eventos.jpg','img/ex_templarios.jpg']
-labels=['Fixado']+[None]*10+['Publicado','Publicado']
-h='<h2 style="margin-top:36px">Como fica a grelha a 5 de novembro</h2><p class="sub">O Torneio de Natal continua fixado no topo. A seguir, claro e escuro alternados.</p><div class="igrid">'
+tiles=['img/ex_natal.jpg']+[f'img/{i:02d}.jpg' for i in range(29,12,-1)]+['img/ex_tempestade.jpg']+[f'img/{i:02d}.jpg' for i in range(12,0,-1)]+['img/ex_eventos.jpg']
+labels=['Fixado']+[None]*17+['Aviso']+[None]*12+['Publicado']
+h='<h2 style="margin-top:36px">Como fica a grelha a 3 de dezembro</h2><p class="sub">O Torneio de Natal continua fixado no topo. A seguir, claro e escuro alternados (o aviso da tempestade entrou fora do plano).</p><div class="igrid">'
 for t,l in zip(tiles,labels): h+=f'<div class="tile"><img src="{t}" alt="" loading="lazy">{f"<span>{l}</span>" if l else ""}</div>'
 h+='</div>'
 s=open(O+'plano.html').read()
