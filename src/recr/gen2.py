@@ -57,7 +57,7 @@ s3=doc(1350,f'''
 <div><div style="font-weight:800;font-size:24px;letter-spacing:.16em;text-transform:uppercase;color:#12ace3">Candidata-te já</div>
 <div style="font-weight:800;font-size:40px;margin-top:10px">tomarpadel@gmail.com</div>
 <div style="font-weight:800;font-size:40px;margin-top:4px">WhatsApp 916 563 352</div></div>
-<img src="{A}logos/azul_simbolo20.png" style="height:90px"></div>''')
+<img src="{A}logos/azul_vertical.png" style="height:180px"></div>''')
 # STORY
 st=doc(1920,f'''
 <img class="lg" src="{A}logos/branco_simbolo20.png" style="left:72px;top:250px">
@@ -81,7 +81,7 @@ def light(d):
     ('background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.14)','background:#fff;border:2px solid rgba(21,64,110,.1)'),
     ('.dots i{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.3)}.dots i.on{background:#fff','.dots i{width:12px;height:12px;border-radius:50%;background:rgba(21,64,110,.25)}.dots i.on{background:#15406e'),
     ('height:250px;background:#fff;color:#15406e','height:250px;background:#15406e;color:#fff'),('color:#12ace3">Candidata-te já','color:#5fd0f5">Candidata-te já'),
-    ('<img src="'+A+'logos/azul_simbolo20.png" style="height:90px">','<img src="'+A+'logos/branco_simbolo20.png" style="height:90px">'),
+    ('<img src="'+A+'logos/azul_vertical.png" style="height:180px">','<img src="'+A+'logos/branco_vertical.png" style="height:180px">'),
     ('top:1400px;background:#fff;color:#15406e','top:1400px;background:#15406e;color:#fff'),('color:#12ace3">Responde','color:#5fd0f5">Responde'),
     ('box-shadow:0 20px 50px rgba(0,0,0,.3)','box-shadow:0 20px 50px rgba(0,0,0,.12)')]
     for a,b in R: d=d.replace(a,b)
