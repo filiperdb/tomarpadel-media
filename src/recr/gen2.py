@@ -27,7 +27,7 @@ s1=doc(1350,f'''
 <div style="position:absolute;left:72px;right:72px;top:690px;height:400px;border-radius:28px;overflow:hidden"><img src="{A}assets/fotos-out2026/foto-05.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 38%"></div>
 <div style="position:absolute;left:72px;right:72px;bottom:150px;display:flex;align-items:center;gap:22px">
 <div class="chip" style="font-size:44px;padding:18px 40px">Receção &amp; Bar</div>
-<div style="font-size:30px;font-weight:600;opacity:.85;line-height:1.25">Turnos rotativos<br>incluindo fins de semana</div></div>
+<div style="font-size:30px;font-weight:600;opacity:.85;line-height:1.25">Vem fazer parte<br>da nossa equipa</div></div>
 <div style="position:absolute;left:72px;right:72px;bottom:70px;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:26px;letter-spacing:.06em;opacity:.8"><span>DESLIZA PARA SABER MAIS</span><span style="font-size:44px">→</span></div>
 ''')
 ball1=ball.replace('W','150').replace('POS','right:90px;top:170px')
@@ -66,7 +66,7 @@ st=doc(1920,f'''
 <div style="position:absolute;left:72px;right:72px;top:930px">
 <div class="chip" style="font-size:46px;padding:18px 40px">Receção &amp; Bar</div>
 <div style="margin-top:34px;font-size:40px;font-weight:700;line-height:1.6">
-<div>🛎️ Check-in dos jogadores e reservas</div><div>🍺 Trabalho de bar</div><div>🏆 Apoio nos jogos e torneios</div><div>🕘 Turnos, incluindo fins de semana</div></div></div>
+<div>🛎️ Check-in dos jogadores e reservas</div><div>🍺 Trabalho de bar</div><div>🏆 Apoio nos jogos e torneios</div><div>✨ Clube funcional, arrumado e limpo</div></div></div>
 <div style="position:absolute;left:72px;right:72px;top:1400px;background:#fff;color:#15406e;border-radius:28px;padding:30px 36px">
 <div style="font-weight:800;font-size:24px;letter-spacing:.16em;text-transform:uppercase;color:#12ace3">Responde a esta story ou envia</div>
 <div style="font-weight:800;font-size:38px;margin-top:8px">tomarpadel@gmail.com</div>
