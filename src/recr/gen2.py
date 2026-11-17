@@ -60,18 +60,19 @@ s3=doc(1350,f'''
 <img src="{A}logos/azul_vertical.png" style="height:180px"></div>''')
 # STORY
 st=doc(1920,f'''
-<img class="lg" src="{A}logos/branco_simbolo20.png" style="left:72px;top:250px">
-<div style="position:absolute;left:72px;top:380px" class="sr acc"><span style="font-size:80px;line-height:1.02">Gostas de padel<br>e de pessoas?</span></div>
-<div style="position:absolute;left:72px;top:560px"><div class="big" id="v" style="line-height:.86">Estamos a</div><div class="big acc" id="a" style="line-height:.86">contratar.</div></div>
-<div style="position:absolute;left:72px;right:72px;top:930px">
+<img class="lg" src="{A}logos/branco_simbolo20.png" style="left:72px;top:220px">
+<div style="position:absolute;left:72px;top:330px" class="sr acc"><span style="font-size:80px;line-height:1.02">Gostas de padel<br>e de pessoas?</span></div>
+<div style="position:absolute;left:72px;top:510px"><div class="big" id="v" style="line-height:.86">Estamos a</div><div class="big acc" id="a" style="line-height:.86">contratar.</div></div>
+<div style="position:absolute;left:72px;right:72px;top:770px;height:300px;border-radius:28px;overflow:hidden"><img src="{A}assets/fotos-out2026/foto-05.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 38%"></div>
+<div style="position:absolute;left:72px;right:72px;top:1110px">
 <div class="chip" style="font-size:46px;padding:18px 40px">Receção &amp; Bar</div>
-<div style="margin-top:34px;font-size:40px;font-weight:700;line-height:1.6">
+<div style="margin-top:26px;font-size:40px;font-weight:700;line-height:1.5">
 <div>🛎️ Check-in dos jogadores e reservas</div><div>🍺 Trabalho de bar</div><div>🏆 Apoio nos jogos e torneios</div><div>✨ Clube funcional, arrumado e limpo</div></div></div>
-<div style="position:absolute;left:72px;right:72px;top:1400px;background:#fff;color:#15406e;border-radius:28px;padding:30px 36px">
+<div style="position:absolute;left:72px;right:72px;top:1530px;background:#fff;color:#15406e;border-radius:28px;padding:30px 36px">
 <div style="font-weight:800;font-size:24px;letter-spacing:.16em;text-transform:uppercase;color:#12ace3">Responde a esta story ou envia</div>
 <div style="font-weight:800;font-size:38px;margin-top:8px">tomarpadel@gmail.com</div>
 <div style="font-weight:800;font-size:38px">WhatsApp 916 563 352</div></div>
-''').replace('</body>',ball.replace('W','150').replace('POS','right:90px;top:360px')+'</body>')
+''').replace('</body>',ball.replace('W','150').replace('POS','right:90px;top:310px')+'</body>')
 def light(d):
     R=[('background:radial-gradient(120% 80% at 80% 0%,#1d5a96 0%,#15406e 45%,#0c2a4c 100%)','background:radial-gradient(120% 80% at 80% 0%,#ffffff 0%,#eef3f7 55%,#dfe8f1 100%)'),
     ('color:#fff;background:radial','color:#15406e;background:radial'),('.acc{color:#5fd0f5}','.acc{color:#12ace3}'),
@@ -82,7 +83,7 @@ def light(d):
     ('.dots i{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.3)}.dots i.on{background:#fff','.dots i{width:12px;height:12px;border-radius:50%;background:rgba(21,64,110,.25)}.dots i.on{background:#15406e'),
     ('height:250px;background:#fff;color:#15406e','height:250px;background:#15406e;color:#fff'),('color:#12ace3">Candidata-te já','color:#5fd0f5">Candidata-te já'),
     ('<img src="'+A+'logos/azul_vertical.png" style="height:180px">','<img src="'+A+'logos/branco_vertical.png" style="height:180px">'),
-    ('top:1400px;background:#fff;color:#15406e','top:1400px;background:#15406e;color:#fff'),('color:#12ace3">Responde','color:#5fd0f5">Responde'),
+    ('top:1530px;background:#fff;color:#15406e','top:1530px;background:#15406e;color:#fff'),('color:#12ace3">Responde','color:#5fd0f5">Responde'),
     ('box-shadow:0 20px 50px rgba(0,0,0,.3)','box-shadow:0 20px 50px rgba(0,0,0,.12)')]
     for a,b in R: d=d.replace(a,b)
     return d
