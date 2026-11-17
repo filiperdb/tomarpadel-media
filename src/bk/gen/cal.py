@@ -1,12 +1,12 @@
 import json,datetime as dt,html
 OUT='/tmp/claude-0/-home-claude/4597a63e-1f82-5e3b-9ef6-d26353c1c0bf/scratchpad/plano/'
-NOW='2026-11-15T12:05'
+NOW='2026-11-17T09'
 P=json.load(open('gen/plano.json'));S=json.load(open('gen/stories.json'))
 ev={}
 def add(d,x): ev.setdefault(d,[]).append(x)
 def st(a,kind):
     if a<NOW: return 'pub'
-    if a<'2026-11-21T12': return 'ok'
+    if a<'2026-11-21T12' or a[:13] in ('2026-11-23T10','2026-11-25T10','2026-11-30T10'): return 'ok'
     if kind=='post' or a>='2026-12': return 'new'
     return 'wait'
 for i,p in enumerate(P):
@@ -16,7 +16,7 @@ for s in S:
     a=s['dueAt'];add(a[:10],dict(k='story',t=s['title'],h=a[11:16],img='img/st/'+s['img'].split('/')[-1].replace('.png','.jpg'),s=st(a,'story')))
 MES=['','Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
 DS=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom']
-d=dt.date(2026,10,19);end=dt.date(2026,12,6);today=dt.date(2026,11,15)
+d=dt.date(2026,10,19);end=dt.date(2026,12,6);today=dt.date(2026,11,17)
 rows=''
 while d<=end:
     wk=''

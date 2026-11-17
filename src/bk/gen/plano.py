@@ -222,8 +222,10 @@ json.dump([dict(dueAt=a,img=d,title=e) for a,b,c,d,e in S],open('gen/stories.jso
 json.dump([dict(dueAt=a,img=e,caption=C[e],title=f) for a,b,c,d,e,f,g in P],open('gen/plano.json','w'),ensure_ascii=False,indent=1)
 from PIL import Image
 OUT='/tmp/claude-0/-home-claude/4597a63e-1f82-5e3b-9ef6-d26353c1c0bf/scratchpad/plano/'
+SCHED={'2026-11-23T10','2026-11-25T10','2026-11-30T10'}
 def STATUS(a):
-    if a<'2026-11-15T12:05': return 'Publicado','pub'
+    if a<'2026-11-17T09': return 'Publicado','pub'
+    if a[:13] in SCHED: return 'Agendado','ok'
     if a<'2026-11-21T12': return 'Agendado','ok'
     if a<'2026-11-22': return 'Aprovado · a agendar','wait'
     return 'Lote 3 · por aprovar','new'
