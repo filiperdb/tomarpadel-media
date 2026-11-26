@@ -1,3 +1,5 @@
+import os as _o
+WA=_o.environ.get('WA')=='1'
 A='file:///home/claude/bk/'
 FONT=f"""@font-face{{font-family:'Archivo';src:url('{A}assets/archivo.woff2');font-weight:100 900;font-stretch:62% 125%}}
 @font-face{{font-family:'Instrument Serif';src:url('{A}assets/instrument-italic.woff2');font-style:italic}}"""
@@ -25,12 +27,15 @@ body{width:1080px;height:1920px;overflow:hidden;position:relative;font-family:Ar
 def page(inner,photo=None,pos='50% 50%',n=None):
     bg=(f'<div class="bgw"></div><img class="ph" src="{photo}" style="object-position:{pos}"><div class="gr"></div>' if photo else f'<div class="bgw"></div><img class="wm" src="{A}logos/branco_simbolo20.png">')
     foot=f'<div class="foot"><span>Clube TomarPadel</span><span>{n}/5</span></div>' if n else ''
-    return f'<!doctype html><meta charset=utf-8><style>{FONT}{CSS}</style><body>{bg}<div class="top"><img src="{A}logos/branco_simbolo20.png"><div class="kick">Liga de Clubes 2027</div></div>{inner}{foot}</body>'
+    if WA:
+        bg=bg.replace('class="ph" ','class="ph" style="height:720px;" ').replace('class="gr"','class="gr" style="height:724px"').replace('style="object-position','data-x="1" style="height:720px;object-position')
+        return f'<!doctype html><meta charset=utf-8><style>{FONT}{CSS}body{{height:1350px}}.wm{{top:50%;width:1300px}}</style><body>{bg}<div style="position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:50% 0;transform:translateY(-148px) scale(.86)"><div class="top"><img src="{A}logos/branco_simbolo20.png"><div class="kick">Liga de Clubes 2027</div></div>{inner}{foot}</div></body>'
+    return f'<!doctype html><meta charset=utf-8><style>{FONT}{CSS}</style><body>{bg}<div class="top"><img src="{A}logos/branco_simbolo20.png"><div class="kick">Liga de Clubes 2027</div></div>{inner}{foot}</div></body>'
 P={}
 P['1-capa']=page(f'''<div class="c" style="top:690px"><div class="sr" style="font-size:110px;line-height:1">Liga de Clubes</div><div class="tt" style="font-size:300px;margin-top:6px">2027</div>
 <div style="margin-top:26px;font-weight:800;font-size:44px;letter-spacing:.04em">CLUBE TOMARPADEL</div>
 <div class="card" style="margin-top:56px;display:flex;justify-content:space-between;align-items:center"><div><div class="kick" style="font-size:22px">Pré-inscrições abertas</div><div style="font-weight:900;font-size:56px;margin-top:8px;line-height:1">até 31 de dezembro</div></div><div style="font-size:70px">🎾</div></div>
-<div class="p" style="margin-top:40px;opacity:.85">Queres representar o TomarPadel? Desliza e fica a saber tudo.</div></div>''',photo=f'{A}assets/fotos-out2026/foto-08.jpg',pos='50% 55%',n=1)
+<div class="p" style="margin-top:40px;opacity:.85">Queres representar o TomarPadel? Fica a saber tudo nas próximas imagens.</div></div>''',photo=f'{A}assets/fotos-out2026/foto-08.jpg',pos='50% 55%',n=1)
 P['2-pre-inscricao']=page(f'''<div class="c" style="top:400px"><div class="sr" style="font-size:96px;line-height:1">Como fazer a</div><div class="tt" style="font-size:92px;white-space:nowrap">pré-inscrição</div>
 <div class="p" style="margin-top:60px">As pré-inscrições estão abertas até <b>31 de dezembro de 2026</b>. Entra no grupo de pré-inscrição da tua categoria:</div>
 <div style="display:flex;gap:20px;margin-top:44px"><div class="chip" style="font-size:46px;padding:22px 52px">Masculino</div><div class="chip" style="font-size:46px;padding:22px 52px">Feminino</div></div>
@@ -53,13 +58,13 @@ P['5-importante']=page(f'''<div class="c" style="top:390px"><div class="sr" styl
 <div class="card" style="margin-top:70px"><div class="kick" style="font-size:24px"><span class="lime"></span>Treinadores responsáveis</div><div style="display:flex;justify-content:space-between;margin-top:22px;font-weight:800;font-size:38px"><span>Luís Coelho</span><span>Ricardo Santos</span><span>João Farinha</span></div></div></div>''',n=5)
 from playwright.sync_api import sync_playwright
 import os
-os.makedirs('out',exist_ok=True)
+OUT='out_wa' if WA else 'out';os.makedirs(OUT,exist_ok=True)
 with sync_playwright() as p:
-    b=p.chromium.launch();pg=b.new_page(viewport={'width':1080,'height':1920})
+    b=p.chromium.launch();pg=b.new_page(viewport={'width':1080,'height':1350 if WA else 1920})
     for n,h in P.items():
-        open('t.html','w').write(h);pg.goto('file:///home/claude/liga/t.html');pg.wait_for_timeout(500);pg.screenshot(path=f'out/liga-{n}.png')
+        open('t.html','w').write(h);pg.goto('file:///home/claude/liga/t.html');pg.wait_for_timeout(500);pg.screenshot(path=f'{OUT}/liga-{n}.png')
     b.close()
 from PIL import Image
-fs=sorted(os.listdir('out'));S=Image.new('RGB',(5*432+40,768),'white')
-for i,f in enumerate(fs): S.paste(Image.open('out/'+f).resize((432,768)),(i*442,0))
-S.save('sheet.png')
+fs=sorted(os.listdir(OUT));H=540 if WA else 768;S=Image.new('RGB',(5*432+40,H),'white')
+for i,f in enumerate(fs): S.paste(Image.open(OUT+'/'+f).resize((432,H)),(i*442,0))
+S.save('sheet_wa.png' if WA else 'sheet.png')
