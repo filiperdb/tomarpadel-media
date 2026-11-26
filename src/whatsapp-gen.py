@@ -16,18 +16,23 @@ I={
 }
 def svg(k,s,c='#fff'): return f'<svg viewBox="0 0 24 24" width="{s}" height="{s}" fill="none" stroke="{c}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:{c}">{I[k]}</svg>'
 def logo(white=True,h=64): return f'<img src="{A}logos/{"branco" if white else "azul"}_simbolo20.png" style="height:{h}px">'
+import os as _o
+WM=_o.environ.get('WM','0')=='1'
 def page(bg,inner,fg='#fff'):
-    return f"""<!doctype html><meta charset=utf-8><style>{FONT}*{{margin:0;box-sizing:border-box}}body{{width:1080px;height:1080px;background:{bg};color:{fg};font-family:Archivo;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
+    dark = fg=='#fff'
+    wm=(f'<img src="{A}logos/{"branco" if dark else "azul"}_simbolo20.png" style="position:absolute;left:50%;top:50%;width:960px;transform:translate(-50%,-50%);opacity:{(.26 if bg==BLUE else .17) if dark else .13};pointer-events:none">' if WM else '')
+    inner=wm+'<div style="position:relative;display:flex;flex-direction:column;align-items:center">'+inner+'</div>'
+    return f"""<!doctype html><meta charset=utf-8><style>{FONT}*{{margin:0;box-sizing:border-box}}body{{position:relative;overflow:hidden;width:1080px;height:1080px;background:{bg};color:{fg};font-family:Archivo;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
 .lab{{font-weight:900;font-stretch:112%;letter-spacing:-.01em;text-transform:uppercase;line-height:.95}}.sub{{font-weight:700;font-size:44px;letter-spacing:.18em;text-transform:uppercase;opacity:.85}}</style><body>{inner}</body>"""
 def icon_page(k,label,size=96,bg=NAVY,sub=None):
-    s=f'<div style="margin-top:-20px">{logo(h=58)}</div><div style="margin:44px 0 40px">{svg(k,290)}</div><div class="lab" style="font-size:{size}px">{label}</div>'
+    s=f'<div style="margin:0 0 40px">{svg(k,280)}</div><div class="lab" style="font-size:{size}px">{label}</div>'
     if sub: s+=f'<div class="sub" style="font-size:36px;margin-top:18px">{sub}</div>'
     return page(bg,s)
 P={}
 P['01-comunidade']=page(NAVY,f'<img src="{A}logos/branco_vertical.png" style="width:560px"><div class="sub" style="margin-top:56px;font-size:50px;letter-spacing:.22em">Comunidade</div>')
 P['02-gerencia']=icon_page('briefcase','Gerência',bg=DARK)
 P['03-staff']=icon_page('badge','Staff',size=120,bg=DARK)
-P['04-ricardo-santos']=page(BLUE,f'<div style="margin-top:-10px">{logo(h=58)}</div><div class="lab" style="font-size:300px;margin:30px 0 10px;letter-spacing:-.04em">RS</div><div class="lab" style="font-size:72px">Ricardo Santos</div><div class="sub" style="font-size:40px;margin-top:20px;letter-spacing:.08em">Treinador &amp; Relações Públicas</div>')
+P['04-ricardo-santos']=page(NAVY,f'<div class="lab" style="font-size:120px">Ricardo<br>Santos</div><div class="sub" style="font-size:40px;margin-top:20px;letter-spacing:.08em">Treinador &amp; Relações Públicas</div>')
 P['05-professores']=icon_page('racket','Professores',size=92)
 P['06-tips-tricks']=icon_page('bulb','Tips &amp; Tricks',size=96,bg=BLUE)
 P['07-alvoradas']=icon_page('sunrise','Alvoradas',size=100,bg=NAVY)
@@ -36,23 +41,23 @@ T={'F':(BLUE,'#fff','Feminino',True),'M':(NAVY,'#fff','Masculino',True),'X':(WHI
 for i,(n,t) in enumerate(lv):
     bg,fg,sub,w=T[t]
     acc='#5fd0f5' if t=='M' else ('#ffffff' if t=='F' else '#12ace3')
-    P[f'{8+i:02d}-{n.lower().replace("+","-mais")}']=page(bg,f'<div style="margin-top:-30px">{logo(w,h=62)}</div><div class="lab" style="font-size:{340 if len(n)<3 else 300}px;margin:36px 0 26px;letter-spacing:-.05em;text-transform:none">{n.replace("+","<span style=&quot;color:"+acc+"&quot;>+</span>")}</div><div class="sub" style="font-size:46px">{sub}</div>',fg)
-ball='<svg viewBox="0 0 100 100" width="110" height="110" style="position:absolute;right:170px;top:-10px;filter:drop-shadow(0 10px 16px rgba(0,0,0,.3))"><defs><radialGradient id="bg" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#e4f27a"/><stop offset=".6" stop-color="#c6dc3c"/><stop offset="1" stop-color="#93ad16"/></radialGradient><clipPath id="cc"><circle cx="50" cy="50" r="47"/></clipPath></defs><circle cx="50" cy="50" r="47" fill="url(#bg)"/><g clip-path="url(#cc)" fill="none" stroke="#fbfdf0" stroke-width="4.2" stroke-linecap="round"><path d="M14 6 C 40 26, 40 74, 14 94"/><path d="M86 6 C 60 26, 60 74, 86 94"/></g></svg>'
-P['21-torneio-natal-equipas']=page(RED,f'<div style="position:relative;width:100%;display:flex;flex-direction:column;align-items:center">{ball}<div style="margin-top:-20px">{logo(h=58)}</div><div class="lab" style="font-size:44px;letter-spacing:.3em;margin-top:40px;font-stretch:125%">Torneio de</div><div class="lab" style="font-size:196px;font-stretch:118%;letter-spacing:-.03em;margin-top:6px">Natal</div><div style="background:#fff;color:#c8102e;font-weight:900;font-size:50px;letter-spacing:.08em;padding:12px 36px;margin-top:30px;text-transform:uppercase;font-stretch:115%">Equipas</div><div class="sub" style="font-size:34px;margin-top:26px">4 · 5 · 6 Dezembro</div></div>')
+    P[f'{8+i:02d}-{n.lower().replace("+","-mais")}']=page(bg,f'<div class="lab" style="font-size:{400 if len(n)<3 else 330}px;letter-spacing:-.05em;text-transform:none">{n.replace("+","<span style=&quot;color:"+acc+"&quot;>+</span>")}</div>',fg)
+ball='<svg viewBox="0 0 100 100" width="110" height="110" style="position:absolute;right:200px;top:20px;filter:drop-shadow(0 10px 16px rgba(0,0,0,.3))"><defs><radialGradient id="bg" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#e4f27a"/><stop offset=".6" stop-color="#c6dc3c"/><stop offset="1" stop-color="#93ad16"/></radialGradient><clipPath id="cc"><circle cx="50" cy="50" r="47"/></clipPath></defs><circle cx="50" cy="50" r="47" fill="url(#bg)"/><g clip-path="url(#cc)" fill="none" stroke="#fbfdf0" stroke-width="4.2" stroke-linecap="round"><path d="M14 6 C 40 26, 40 74, 14 94"/><path d="M86 6 C 60 26, 60 74, 86 94"/></g></svg>'
+P['21-torneio-natal-equipas']=page(RED,f'<div style="position:relative;width:100%;display:flex;flex-direction:column;align-items:center">{ball}<div style="margin-top:-20px">{logo(h=130)}</div><div class="lab" style="font-size:44px;letter-spacing:.3em;margin-top:40px;font-stretch:125%">Torneio de</div><div class="lab" style="font-size:196px;font-stretch:118%;letter-spacing:-.03em;margin-top:6px">Natal</div><div style="background:#fff;color:#c8102e;font-weight:900;font-size:50px;letter-spacing:.08em;padding:12px 36px;margin-top:30px;text-transform:uppercase;font-stretch:115%">Equipas</div><div class="sub" style="font-size:34px;margin-top:26px">4 · 5 · 6 Dezembro</div></div>')
 from playwright.sync_api import sync_playwright
-os.makedirs('out',exist_ok=True)
+OUT='out_wm' if WM else 'out';os.makedirs(OUT,exist_ok=True)
 with sync_playwright() as p:
     b=p.chromium.launch();pg=b.new_page(viewport={'width':1080,'height':1080})
     for n,h in P.items():
-        open('t.html','w').write(h);pg.goto('file:///home/claude/wa/t.html');pg.wait_for_timeout(250);pg.screenshot(path=f'out/{n}.png')
+        open('t.html','w').write(h);pg.goto('file:///home/claude/wa/t.html');pg.wait_for_timeout(250);pg.screenshot(path=f'{OUT}/{n}.png')
     b.close()
 # preview sheet with circle crop
 from PIL import Image,ImageDraw
-fs=sorted(os.listdir('out'));fs=[f for f in fs if f[0].isdigit()]
+fs=sorted(os.listdir(OUT));fs=[f for f in fs if f[0].isdigit()]
 C=7;S=200;G=24;rows=(len(fs)+C-1)//C
 sheet=Image.new('RGB',(C*(S+G)+G,rows*(S+G)+G),(11,20,26))
 m=Image.new('L',(S,S),0);ImageDraw.Draw(m).ellipse((0,0,S,S),fill=255)
 for i,f in enumerate(fs):
-    im=Image.open('out/'+f).convert('RGB').resize((S,S),Image.LANCZOS)
+    im=Image.open(OUT+'/'+f).convert('RGB').resize((S,S),Image.LANCZOS)
     sheet.paste(im,(G+(i%C)*(S+G),G+(i//C)*(S+G)),m)
-sheet.save('sheet.png')
+sheet.save('sheet_wm.png' if WM else 'sheet.png')
