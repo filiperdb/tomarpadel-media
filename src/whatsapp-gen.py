@@ -29,7 +29,7 @@ def icon_page(k,label,size=96,bg=NAVY,sub=None):
     if sub: s+=f'<div class="sub" style="font-size:36px;margin-top:18px">{sub}</div>'
     return page(bg,s)
 P={}
-P['01-comunidade']=page(NAVY,f'<img src="{A}logos/branco_vertical.png" style="width:560px"><div class="sub" style="margin-top:56px;font-size:50px;letter-spacing:.22em">Comunidade</div>')
+P['01-comunidade']=page(NAVY,f'<img src="{A}logos/branco_vertical.png" style="width:560px"><div class="lab" style="margin-top:50px;font-size:104px">Comunidade</div>')
 P['02-gerencia']=icon_page('briefcase','Gerência',bg=DARK)
 P['03-staff']=icon_page('badge','Staff',size=120,bg=DARK)
 P['04-ricardo-santos']=page(NAVY,f'<div class="lab" style="font-size:120px">Ricardo<br>Santos</div><div class="sub" style="font-size:40px;margin-top:20px;letter-spacing:.08em">Treinador &amp; Relações Públicas</div>')
